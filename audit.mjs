@@ -1,0 +1,5 @@
+// Describe changes without exposing raw JSON or OAuth client identifiers in the interface.
+export function auditSummary(row){
+ const label={title:'Title',description:'Description',assignee:'Owner',waiting_on_person_id:'Waiting on contact',assignee_person_id:'Assignee contact',action_status:'Status',status:'Status',done:'Completion',due_date:'Due Date',start_date:'Start Date',issue_date:'Issue Date',likelihood:'Likelihood',impact:'Impact',mitigation:'Mitigation',comments:'Comments',reviewed_on:'Review Date',notes:'Notes',project_id:'Project',workstream_id:'Workstream',milestone_id:'Milestone Link',archived:'Archive State'};
+ try{const before=row.before_json?JSON.parse(row.before_json):null,after=JSON.parse(row.after_json);if(!before)return '';return Object.keys(label).filter(k=>Object.hasOwn(after,k)&&JSON.stringify(before[k])!==JSON.stringify(after[k])).map(k=>['status','action_status','due_date','start_date','reviewed_on'].includes(k)?`${label[k]}: ${after[k]||'Not Set'}`:k==='archived'?(after[k]?'Archived':'Restored'):`${label[k]} Updated`).join(' · ');}catch{return '';}
+}

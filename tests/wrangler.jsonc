@@ -1,0 +1,46 @@
+{
+  "name": "project-workspace-local-test",
+  "main": "fixture.mjs",
+  "compatibility_date": "2026-11-07",
+  "compatibility_flags": [
+    "nodejs_compat",
+    "global_fetch_strictly_public"
+  ],
+  "workers_dev": true,
+  "observability": {
+    "enabled": false
+  },
+  "vars": {
+    "PUBLIC_ORIGIN": "http://127.0.0.1:8790",
+    "OWNER_GITHUB_ID": "100001",
+    "GITHUB_CLIENT_ID": "local-fixture",
+    "GITHUB_CLIENT_SECRET": "local-fixture-not-a-secret"
+  },
+  "kv_namespaces": [
+    {
+      "binding": "OAUTH_KV",
+      "id": "local-test"
+    }
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "project-workspace",
+      "database_id": "local-test-db"
+    }
+  ],
+  "assets": {
+    "directory": "../public",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  },
+  "rules": [
+    {
+      "type": "Text",
+      "globs": [
+        "**/*.sql"
+      ],
+      "fallthrough": true
+    }
+  ]
+}

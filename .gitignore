@@ -1,0 +1,17 @@
+node_modules/
+public/
+.wrangler/
+.playwright-cli/
+__pycache__/
+output/
+data/
+*.sqlite*
+*.db
+*.db-*
+*.log
+*.tmp
+*.xlsx
+*.xlsm
+.env*
+.dev.vars*
+/wrangler.jsonc

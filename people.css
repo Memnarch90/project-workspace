@@ -1,0 +1,33 @@
+.people-view{min-width:0}
+#workspace .main:has(.people-view) .toolbar{margin-bottom:0}
+.people-privacy{padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:var(--soft,light-dark(#f5f3fa,#2a293b));font-size:12px;line-height:1.5}
+#workspace .people-privacy{margin:0 0 12px}
+.people-actions,.people-journal-link{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:8px 0}
+#workspace .people-filters button{min-height:36px;white-space:nowrap}
+.people-list{margin:0;padding:0;list-style:none}
+.people-list>li{padding:10px 0;overflow-wrap:anywhere}
+.people-list>li+li{border-top:1px solid var(--line)}
+.people-directory>li{padding:12px 8px;min-height:58px}
+.people-list-row{display:flex;justify-content:space-between;align-items:center;gap:6px 14px;flex-wrap:wrap}
+.people-list-row .people-link{font-weight:650}
+.people-list-dates{text-align:right}
+#workspace .people-panel{margin:0 0 12px}
+#workspace .people-profile-heading{flex-wrap:wrap}
+#workspace .people-profile-heading .people-actions{margin:0}
+#workspace .people-detail h4,#workspace .people-panel h4{font-size:15px;font-weight:650;margin:0 0 6px}
+#workspace .people-panel .case-facts{margin-bottom:14px}
+#workspace .people-link{padding:0;border:0;border-radius:2px;color:var(--brand);background:transparent;text-decoration:underline;text-align:left;overflow-wrap:anywhere}
+#workspace .people-note{white-space:pre-wrap;overflow-wrap:anywhere;margin-bottom:12px}
+#workspace .people-commitments{margin-bottom:12px}
+.people-projects{display:grid;gap:.35rem;max-height:13rem;overflow:auto}
+.people-projects label{display:flex;align-items:center;gap:.5rem}
+.people-projects input{width:auto}
+.people-journal-link [role=alert]{color:light-dark(#982329,#ff9db5)}
+.journal-entry .people-link{margin-right:.7rem}
+#peopleEditor fieldset{min-width:0;border:1px solid var(--line,#ded6e6);border-radius:8px}
+#peopleEditor [role=alert]{color:light-dark(#982329,#ff9db5)}
+@media(max-width:760px){
+ #workspace .people-filters .search{grid-column:1/-1}
+ #workspace .people-filters button{align-self:end;justify-self:start}
+ .people-list-dates{text-align:left}
+}
