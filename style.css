@@ -363,3 +363,8 @@ dialog .workspace-close {display:grid;place-items:center;min-width:34px;min-heig
  #workspace nav > button[data-view]{min-height:42px}
  #toolsDialog > header,#toolsDialog > header + div,#toolsDialog > .discard-confirm {padding-inline:13px}
 }
+
+/* Neutral branding for the shareable source. */
+#workspace .workspace-brand{display:flex;align-items:center;gap:18px;min-width:0}
+#workspace .logo-placeholder{display:flex;align-items:center;justify-content:center;flex:none;width:132px;min-height:48px;padding:8px 12px;border:1px dashed var(--line);border-radius:8px;background:var(--paper);color:var(--ink);font-size:12px;text-align:center}
+@media(max-width:760px){#workspace .workspace-brand{gap:10px}#workspace .logo-placeholder{width:88px;min-height:40px;padding:6px;font-size:10px}}

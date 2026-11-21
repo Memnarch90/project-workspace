@@ -8,7 +8,8 @@
     "check": "node --test tests/*.test.mjs",
     "dev": "wrangler dev --port 8788",
     "deploy": "wrangler deploy",
-    "build": "node scripts/build.mjs"
+    "build": "node scripts/build.mjs",
+    "check:publish": "node scripts/check-publish.mjs"
   },
   "dependencies": {
     "@cloudflare/workers-oauth-provider": "1.2.4",
