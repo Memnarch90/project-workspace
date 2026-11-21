@@ -16,6 +16,10 @@
 
 Project Workspace brings daily tasks and longer projects together. See what needs attention, choose your next actions, keep the supporting notes nearby and export a project plan when you need to share it.
 
+## Try the interactive showcase
+
+[Open the GitHub Pages demo](https://memnarch90.github.io/project-workspace/). Explore fictional projects, complete example tasks, search notes and reset the demo. It runs entirely in the browser, stores changes only in page memory and is not connected to a live workspace. The full app downloaded below still starts empty.
+
 ## What you can do
 
 | Keep track of | How it helps |

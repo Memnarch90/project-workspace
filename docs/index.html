@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Explore Project Workspace with fictional projects, tasks and notes. An interactive showcase with no account required.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Project Workspace · Interactive showcase</title>
+<link rel="icon" href="showcase-icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="showcase.css"><script src="showcase.js" defer></script>
+</head>
+<body>
+<header class="site-header"><a class="wordmark" href="#"><img src="showcase-icon.svg" alt="" width="32" height="32">Project Workspace</a><nav aria-label="Site"><a href="#explore">Try the demo</a><a href="https://github.com/Memnarch90/project-workspace">View source</a></nav></header>
+<main>
+<section class="intro"><div><p class="eyebrow">A little more clarity. A little less chasing.</p><h1>See the work.<br>Find your next step.</h1><p class="intro-copy">Projects, daily tasks, meeting notes and risks in one workspace. Explore a fictional studio's week, then make a workspace of your own.</p><div class="hero-actions"><a class="button primary" href="#explore">Explore the workspace</a><a class="button" href="https://github.com/Memnarch90/project-workspace#user-content-get-started">Get the source</a></div></div><aside class="intro-note"><span class="note-label">THE IDEA</span><p>Keep the plan and the small things that move it forward together.</p><div class="note-rule"></div><span>Local app · Optional cloud hosting · MCP for AI clients</span></aside></section>
+<section id="explore" aria-label="Interactive workspace demo">
+<div class="demo-notice"><div><strong>Fictional data. Real idea.</strong><span> A standalone showcase, not the full application. Changes reset on reload.</span></div><button id="resetDemo" type="button">Reset demo</button></div>
+<div class="demo-app">
+<header class="app-header"><span class="logo-placeholder">Place your logo here</span><div class="app-context"><span class="folder" aria-hidden="true">▱</span><div><span class="context-label">YOUR PROJECT WORKSPACE</span><h2 id="workspaceName">All Projects</h2></div></div><span class="demo-badge">DEMO WORKSPACE</span></header>
+<div class="app-body"><nav class="sidebar" aria-label="Demo views"><span class="nav-label">DAILY WORK</span><button data-view="dashboard" aria-current="page">Dashboard</button><button data-view="day">My Day</button><button data-view="notes">Notes & meetings</button><span class="nav-label">PROJECTS</span><button data-view="plan">Project Plan</button><button data-view="risks">Risk Log</button><button data-view="knowledge">Internal Knowledge</button><div class="sidebar-note">Example studio<br><span>Every record is invented.</span></div></nav><div class="app-main"><div class="view-heading"><div><p class="eyebrow" id="viewKicker">A CLEARER PICTURE</p><h2 id="viewTitle">Dashboard</h2></div><span class="example-date">Example week · 2026-11-23</span></div><div class="filters"><label>Project<select id="projectFilter"><option value="">All Projects</option></select></label><label>Search fictional records<input id="search" type="search" placeholder="Try ‘website’ or ‘review’"></label></div><p id="feedback" role="status" aria-live="polite"></p><div id="viewContent"></div></div></div>
+</div><p class="demo-caption">Try My Day, tick a task, filter a project or open a note. This preview keeps changes in page memory only and makes no API calls.</p>
+</section>
+<section class="next-section"><div><p class="eyebrow">FROM PREVIEW TO YOUR OWN WORKSPACE</p><h2>Start empty.<br>Make it yours.</h2><p>The downloadable app starts without these example records. Run it on your own computer, or configure your own Cloudflare deployment.</p><a class="button primary" href="https://github.com/Memnarch90/project-workspace#user-content-get-started">Installation instructions</a></div><div class="guide-list"><a href="https://github.com/Memnarch90/project-workspace/blob/main/docs/ai-connections.md"><span>Connect an AI bot</span><p>Remote MCP, OAuth permissions and what gets shared.</p></a><a href="https://github.com/Memnarch90/project-workspace/blob/main/docs/excel-exports.md"><span>Understand Excel exports</span><p>A fixed starting layout you can adapt, with clear limitations.</p></a><a href="https://github.com/Memnarch90/project-workspace#user-content-your-data"><span>Understand your data</span><p>Local storage, optional hosting and access considerations.</p></a></div></section>
+</main><footer><span>Project Workspace · Independent project</span><span>No account, analytics or external fonts in this demo. GitHub serves the page and may record access logs.</span></footer>
+</body></html>
