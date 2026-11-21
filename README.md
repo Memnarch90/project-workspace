@@ -31,6 +31,12 @@ Project Workspace brings daily tasks and longer projects together. See what need
 
 The public edition uses a standard system font and a **“Place your logo here”** placeholder. It starts empty; add your own projects when you are ready.
 
+## Excel export: a fixed starting layout
+
+The Excel format was built around the maintainer's own workflow and is deliberately limited. Project exports use a fixed plan, Risk log and Lists structure; this is not a configurable report designer or a full workspace backup. You can edit downloaded files in Excel, but changing future exports requires adapting the exporter code.
+
+The public edition supplies no company logo or proprietary company font in its exports. Your own entered records, including names and notes, are still exported. [See the export scope and customisation guide](docs/excel-exports.md).
+
 ## Get started
 
 You need **Git** and **Node.js 22.23.2** (the version used to check this release).
