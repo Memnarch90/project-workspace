@@ -9,7 +9,7 @@
 :is(.project-icon-tile,.project-icon-colours button)[data-colour="rose"] {--project-icon-ink:light-dark(#96305c,#ffc0db);--project-icon-fill:light-dark(#fce8f1,#553045)}
 
 .project-icon-tile svg,#projectIconDialog svg {width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}
-#workspace .masthead>div:first-child {position:relative;padding-left:3.2rem}
+#workspace .masthead>.workspace-context {position:relative;padding-left:3.2rem}
 #workspace #projectIconBadge {position:absolute;left:0;top:50%;transform:translateY(-50%);width:2.5rem;height:2.5rem;border-radius:.65rem;display:grid;place-items:center;padding:0;border:1px solid #ffffff5c}
 #workspace #projectIconBadge:disabled {cursor:default;opacity:1}
 #workspace #projectIconBadge:not(:disabled):hover {outline:2px solid #fff8;outline-offset:2px}
